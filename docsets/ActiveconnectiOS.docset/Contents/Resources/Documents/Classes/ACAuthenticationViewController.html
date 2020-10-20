@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ACAuthenticationViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ACAuthenticationViewController" class="dashAnchor"></a>
+    <a title="ACAuthenticationViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ActiveconnectiOS 0.1.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ActiveconnectiOS Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ACAuthenticationViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACActiveSession.html">ACActiveSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationRequest.html">ACAuthenticationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationViewController.html">ACAuthenticationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACBusyViewController.html">ACBusyViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACFacialViewController.html">ACFacialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACMobileDevice.html">ACMobileDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler.html">ACNotificationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html">– NotificationHandlerResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACOSViewController.html">ACOSViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACProximityViewController.html">ACProximityViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACSessionStatus.html">ACSessionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingRequiredViewController.html">ACTrainingRequiredViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingViewController.html">ACTrainingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ManagementAPI.html">ManagementAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ACError.html">ACError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OS_Auth_Result.html">OS_Auth_Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionStatus.html">SessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAcceptanceViewControllerDelegate.html">ACAcceptanceViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAuthenticationDelegate.html">ACAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACFacialViewControllerDelegate.html">ACFacialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACOSViewControllerDelegate.html">ACOSViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACProximityViewControllerDelegate.html">ACProximityViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingDelegate.html">ACTrainingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingRequiredViewControllerDelegate.html">ACTrainingRequiredViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActiveconnectConfiguration.html">ActiveconnectConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ACAuthenticationViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ACAuthenticationViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt"><a href="../Protocols/ACAcceptanceViewControllerDelegate.html">ACAcceptanceViewControllerDelegate</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/ACOSViewControllerDelegate.html">ACOSViewControllerDelegate</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/ACFacialViewControllerDelegate.html">ACFacialViewControllerDelegate</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/ACProximityViewControllerDelegate.html">ACProximityViewControllerDelegate</a></span><span class="p">,</span> <span class="kt">ACStatusViewDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>View controller that controls the authentication process.
+The Activeconnect framework provides a default UI for all stages of the.
+Applications can provide their own UI but must use this class to control the authentication process.
+Customization is achieved by providing Bundle and Nib informtion for each of the screens.
+The custom views must be instances or specializations of Activeconnect view controller classes</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS30ACAuthenticationViewControllerC21authenticationRequestAA0cG0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/authenticationRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS30ACAuthenticationViewControllerC21authenticationRequestAA0cG0CSgvp">authenticationRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication request to process</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authenticationRequest</span><span class="p">:</span> <span class="kt"><a href="../Classes/ACAuthenticationRequest.html">ACAuthenticationRequest</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS30ACAuthenticationViewControllerC12mobileDeviceAA08ACMobileG0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/mobileDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS30ACAuthenticationViewControllerC12mobileDeviceAA08ACMobileG0CSgvp">mobileDevice</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device the authentication request is being processed by</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mobileDevice</span><span class="p">:</span> <span class="kt"><a href="../Classes/ACMobileDevice.html">ACMobileDevice</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticationDelegate"></a>
+                    <a name="//apple_ref/swift/Property/authenticationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticationDelegate">authenticationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate that receives authentication status events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">authenticationDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ACAuthenticationDelegate.html">ACAuthenticationDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)acceptanceBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/acceptanceBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)acceptanceBundleIdentifier">acceptanceBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom <code><a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a></code>.
+Client applications can set this value to display a custom UI for the acceptance stage.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">acceptanceBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)acceptanceNibName"></a>
+                    <a name="//apple_ref/swift/Property/acceptanceNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)acceptanceNibName">acceptanceNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code><a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a></code>.
+Client applications can set this value to display a custom UI for the acceptance stage.
+The specified nib should contain a ViewController with the Custom Class property set to ACAcceptanceViewController in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">acceptanceNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)osBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/osBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)osBundleIdentifier">osBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom ACOSViewController.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">osBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)osNibName"></a>
+                    <a name="//apple_ref/swift/Property/osNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)osNibName">osNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code><a href="../Classes/ACOSViewController.html">ACOSViewController</a></code>.
+Client applications can set this value to display a custom UI for the os authentication stage.
+The specified nib should contain a ViewController with the Custom Class property set to ACOSViewController in Ithe Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">osNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)facialBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/facialBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)facialBundleIdentifier">facialBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom <code><a href="../Classes/ACFacialViewController.html">ACFacialViewController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">facialBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)facialNibName"></a>
+                    <a name="//apple_ref/swift/Property/facialNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)facialNibName">facialNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code><a href="../Classes/ACFacialViewController.html">ACFacialViewController</a></code>.
+Client applications can set this value to display a custom UI for the facial stage.
+The specified nib should contain a ViewController with the Custom Class property set to ACFacialViewController in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">facialNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)proximityBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/proximityBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)proximityBundleIdentifier">proximityBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom <code><a href="../Classes/ACProximityViewController.html">ACProximityViewController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">proximityBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)proximityNibName"></a>
+                    <a name="//apple_ref/swift/Property/proximityNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)proximityNibName">proximityNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code><a href="../Classes/ACProximityViewController.html">ACProximityViewController</a></code>.
+Client applications can set this value to display a custom UI for the proximity stage.
+The specified nib should contain a ViewController with the Custom Class property set to ACProximityViewController inthe Interface Builder Identity Inspectorr.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">proximityNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)statusBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/statusBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)statusBundleIdentifier">statusBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom <code>ACStatusViewController</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">statusBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)statusNibName"></a>
+                    <a name="//apple_ref/swift/Property/statusNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)statusNibName">statusNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code>ACStatusViewController</code>.
+Client applications can set this value to display a custom UI for the status messages.
+The specified nib should contain a ViewController with the Custom Class property set to ACStatus in Interface Builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">statusNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticatingBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/authenticatingBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticatingBundleIdentifier">authenticatingBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of a the bundle that contains a custom <code><a href="../Classes/ACBusyViewController.html">ACBusyViewController</a></code>.
+The specified nib should contain a ViewController with the Custom Class property set to ACBusyViewController in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">authenticatingBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticatingNibName"></a>
+                    <a name="//apple_ref/swift/Property/authenticatingNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACAuthenticationViewController(py)authenticatingNibName">authenticatingNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib that contains a custom <code><a href="../Classes/ACBusyViewController.html">ACBusyViewController</a></code>.
+Client applications can set this value to display a custom UI when the app is communicating with Activeconnect
+The specified nib should contain a ViewController with the Custom Class property set to ACBusyViewController in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">authenticatingNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS30ACAuthenticationViewControllerC15didAuthenticateyyF"></a>
+                    <a name="//apple_ref/swift/Method/didAuthenticate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS30ACAuthenticationViewControllerC15didAuthenticateyyF">didAuthenticate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In addition to using delegation, specializations of this class can override didAuthenticate to respond to the user being authenticated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">didAuthenticate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS30ACAuthenticationViewControllerC21didFailToAuthenticateyyF"></a>
+                    <a name="//apple_ref/swift/Method/didFailToAuthenticate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS30ACAuthenticationViewControllerC21didFailToAuthenticateyyF">didFailToAuthenticate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In addition to using delegation, specializations of this class can override didAuthenticate to respond to the user not being authenticated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">didFailToAuthenticate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://activeconnect.activeapi.ninja" target="_blank" rel="external">Activeconnect</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ACNotificationHandler Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ACNotificationHandler" class="dashAnchor"></a>
+    <a title="ACNotificationHandler Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ActiveconnectiOS 0.1.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ActiveconnectiOS Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ACNotificationHandler Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACActiveSession.html">ACActiveSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationRequest.html">ACAuthenticationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationViewController.html">ACAuthenticationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACBusyViewController.html">ACBusyViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACFacialViewController.html">ACFacialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACMobileDevice.html">ACMobileDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler.html">ACNotificationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html">– NotificationHandlerResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACOSViewController.html">ACOSViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACProximityViewController.html">ACProximityViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACSessionStatus.html">ACSessionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingRequiredViewController.html">ACTrainingRequiredViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingViewController.html">ACTrainingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ManagementAPI.html">ManagementAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ACError.html">ACError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OS_Auth_Result.html">OS_Auth_Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionStatus.html">SessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAcceptanceViewControllerDelegate.html">ACAcceptanceViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAuthenticationDelegate.html">ACAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACFacialViewControllerDelegate.html">ACFacialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACOSViewControllerDelegate.html">ACOSViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACProximityViewControllerDelegate.html">ACProximityViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingDelegate.html">ACTrainingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingRequiredViewControllerDelegate.html">ACTrainingRequiredViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActiveconnectConfiguration.html">ActiveconnectConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ACNotificationHandler</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ACNotificationHandler</span></code></pre>
+
+                </div>
+              </div>
+            <p>ACNotification handler parses the content of a push notification and extracts Activeconnect information.
+If the push notification is an Activeconnect authentication request the delegat&rsquo;s presentAuthenticationUI is called with the decoded authentication request and the device that the request is for.
+The client should call the processNotification method when it receives a push notification.
+If processNotification indicates that the notification is an Activeconnect notification no further action is required. The client should carry out notification specific actions by implementing the ACNotificationHandlerDelegate protocol.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS21ACNotificationHandlerC012NotificationD6ResultV"></a>
+                    <a name="//apple_ref/swift/Struct/NotificationHandlerResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS21ACNotificationHandlerC012NotificationD6ResultV">NotificationHandlerResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data structure that represents the result of the processNotification method
+If the notification is an Activeconnect notification, the activeconnectNotification property will be true.</p>
+
+                        <a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NotificationHandlerResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS21ACNotificationHandlerC8delegateAcA0cD8Delegate_pSg_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS21ACNotificationHandlerC8delegateAcA0cD8Delegate_pSg_tcfc">init(delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer</p>
+
+<ul>
+<li>delegate: An object that implements the <code><a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a></code> protocol.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS21ACNotificationHandlerC19processNotification8userInfo17registeredDevicesAC0fD6ResultVSDys11AnyHashableVypG_SayAA14ACMobileDeviceCGtF"></a>
+                    <a name="//apple_ref/swift/Method/processNotification(userInfo:registeredDevices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS21ACNotificationHandlerC19processNotification8userInfo17registeredDevicesAC0fD6ResultVSDys11AnyHashableVypG_SayAA14ACMobileDeviceCGtF">processNotification(userInfo:<wbr>registeredDevices:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Examines the content of a push notification and calls appropriate delegate methods to perform notification specific actions.
+If the notification is an Activeconnect notification the activeconnectNotification property of the result will be true.
+Methods of the delegate will be called on the main thread.</p>
+
+<ul>
+<li>userInfo: The userInfo received in the app delegate&rsquo;s didReceiveRemoteNotification method</li>
+<li>registeredDevices : An array containing the accounts registered on the current device</li>
+<li>NotificationHandlerResult</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">processNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">registeredDevices</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/ACMobileDevice.html">ACMobileDevice</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html">NotificationHandlerResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://activeconnect.activeapi.ninja" target="_blank" rel="external">Activeconnect</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

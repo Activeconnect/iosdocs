@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ACSessionStatus Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ACSessionStatus" class="dashAnchor"></a>
+    <a title="ACSessionStatus Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ACSessionStatus Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACActiveSession.html">ACActiveSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationRequest.html">ACAuthenticationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationViewController.html">ACAuthenticationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACBusyViewController.html">ACBusyViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACFacialViewController.html">ACFacialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACMobileDevice.html">ACMobileDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler.html">ACNotificationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html">– NotificationHandlerResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACOSViewController.html">ACOSViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACProximityViewController.html">ACProximityViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACSessionStatus.html">ACSessionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingRequiredViewController.html">ACTrainingRequiredViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingViewController.html">ACTrainingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ManagementAPI.html">ManagementAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ACError.html">ACError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OS_Auth_Result.html">OS_Auth_Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionStatus.html">SessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAcceptanceViewControllerDelegate.html">ACAcceptanceViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAuthenticationDelegate.html">ACAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACFacialViewControllerDelegate.html">ACFacialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACOSViewControllerDelegate.html">ACOSViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACProximityViewControllerDelegate.html">ACProximityViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingDelegate.html">ACTrainingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingRequiredViewControllerDelegate.html">ACTrainingRequiredViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActiveconnectConfiguration.html">ActiveconnectConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ACSessionStatus</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ACSessionStatus</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the status of an Activeconnect session.
+When the status of a session changes, Activeconnect sends a Push Notification to the application.
+<code><a href="../Classes/ACNotificationHandler.html">ACNotificationHandler</a></code> creates an instance of this class and calls its delegate with the session status.
+The application can update its UI to notify the user that the status of the session has change.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC6userIDSivp"></a>
+                    <a name="//apple_ref/swift/Property/userID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC6userIDSivp">userID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The session&rsquo;s user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">userID</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC13applicationIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/applicationID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC13applicationIDSSvp">applicationID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The session&rsquo;s application ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">applicationID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC15applicationNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/applicationName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC15applicationNameSSvp">applicationName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of session&rsquo;s application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">applicationName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC13authRequestIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/authRequestID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC13authRequestIDSSvp">authRequestID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication request that created the session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">authRequestID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC6statusAA07SessionD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC6statusAA07SessionD0Ovp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current state of the sessiuon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/SessionStatus.html">SessionStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC15durationSecondsSdvp"></a>
+                    <a name="//apple_ref/swift/Property/durationSeconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC15durationSecondsSdvp">durationSeconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration of the session in seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">durationSeconds</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC8durationSSvp"></a>
+                    <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC8durationSSvp">duration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Readbale representation of the session&rsquo;s duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS15ACSessionStatusC4fromACs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS15ACSessionStatusC4fromACs7Decoder_p_tKcfc">init(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an ACSessionStatus instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decoder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The decoder that is decoding the object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>ACSessionStatus</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

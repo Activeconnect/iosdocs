@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ACTrainingViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ACTrainingViewController" class="dashAnchor"></a>
+    <a title="ACTrainingViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ActiveconnectiOS 0.1.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ActiveconnectiOS Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ACTrainingViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ACAcceptanceViewController.html">ACAcceptanceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACActiveSession.html">ACActiveSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationRequest.html">ACAuthenticationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACAuthenticationViewController.html">ACAuthenticationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACBusyViewController.html">ACBusyViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACFacialViewController.html">ACFacialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACMobileDevice.html">ACMobileDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler.html">ACNotificationHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACNotificationHandler/NotificationHandlerResult.html">– NotificationHandlerResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACOSViewController.html">ACOSViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACProximityViewController.html">ACProximityViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACSessionStatus.html">ACSessionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingRequiredViewController.html">ACTrainingRequiredViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ACTrainingViewController.html">ACTrainingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ManagementAPI.html">ManagementAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ACError.html">ACError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OS_Auth_Result.html">OS_Auth_Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionStatus.html">SessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAcceptanceViewControllerDelegate.html">ACAcceptanceViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACAuthenticationDelegate.html">ACAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACFacialViewControllerDelegate.html">ACFacialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACNotificationHandlerDelegate.html">ACNotificationHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACOSViewControllerDelegate.html">ACOSViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACProximityViewControllerDelegate.html">ACProximityViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingDelegate.html">ACTrainingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ACTrainingRequiredViewControllerDelegate.html">ACTrainingRequiredViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActiveconnectConfiguration.html">ActiveconnectConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ACTrainingViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ACTrainingViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>View controller used for the training process.
+The view controller has several views which are displayed depending upon the training that needs to be performed.
+In addition the following views are controller:</p>
+
+<ul>
+<li>Instructions view is displayed prior to training and a status view which displays the result</li>
+<li>Busy view is displayed while training data is being processed.</li>
+<li>Status view is displayed to report the result of the training process.</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)facialBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/facialBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)facialBundleIdentifier">facialBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier of the bundle that contains custom facial training UI (ACFacialViewController).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">facialBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)facialNibName"></a>
+                    <a name="//apple_ref/swift/Property/facialNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)facialNibName">facialNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib file that contains the custom facial training UI (ACfacialViewController)
+The specified nib should contain a ViewController with the Custom Class property set to <code><a href="../Classes/ACFacialViewController.html">ACFacialViewController</a></code> in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">facialNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)instructionsBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/instructionsBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)instructionsBundleIdentifier">instructionsBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier of the bundle that contains custom instructions UI (ACTrainingRequiredViewController).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">instructionsBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)instructionsNibName"></a>
+                    <a name="//apple_ref/swift/Property/instructionsNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)instructionsNibName">instructionsNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib file that contains the custom instructions UI (ACTrainingRequiredViewController)
+The specified nib should contain a ViewController with the Custom Class property set to <code><a href="../Classes/ACTrainingRequiredViewController.html">ACTrainingRequiredViewController</a></code> in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">instructionsNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)statusBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/statusBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)statusBundleIdentifier">statusBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier of the bundle that contains custom status UI (ACStatusViewController).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">statusBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)statusNibName"></a>
+                    <a name="//apple_ref/swift/Property/statusNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)statusNibName">statusNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib file that contains the custom status UI (ACStatusViewController)
+The specified nib should contain a ViewController with the Custom Class property set to <code>ACStatusViewController</code> in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">statusNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)busyBundleIdentifier"></a>
+                    <a name="//apple_ref/swift/Property/busyBundleIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)busyBundleIdentifier">busyBundleIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier of the bundle that contains custom busy UI (ACBusyViewController).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">busyBundleIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)busyNibName"></a>
+                    <a name="//apple_ref/swift/Property/busyNibName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)busyNibName">busyNibName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the nib file that contains the custom busy UI (ACBusyViewController)
+The specified nib should contain a ViewController with the Custom Class property set to <code><a href="../Classes/ACBusyViewController.html">ACBusyViewController</a></code> in the Interface Builder Identity Inspector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">busyNibName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)trainingDelegate"></a>
+                    <a name="//apple_ref/swift/Property/trainingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ActiveconnectiOS@objc(cs)ACTrainingViewController(py)trainingDelegate">trainingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate that receives the training result.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBInspectable</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">trainingDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ACTrainingDelegate.html">ACTrainingDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS24ACTrainingViewControllerC6deviceAA14ACMobileDeviceCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/device" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS24ACTrainingViewControllerC6deviceAA14ACMobileDeviceCSgvp">device</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device being trained.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">device</span><span class="p">:</span> <span class="kt"><a href="../Classes/ACMobileDevice.html">ACMobileDevice</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS24ACTrainingViewControllerC10identifierypSgvp"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS24ACTrainingViewControllerC10identifierypSgvp">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application defined identifier for the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS24ACTrainingViewControllerC16trainingCompleteyyF"></a>
+                    <a name="//apple_ref/swift/Method/trainingComplete()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS24ACTrainingViewControllerC16trainingCompleteyyF">trainingComplete()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when training is complete.
+Classes which derive from ACTrainingViewController can override this method to perform custom oerations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">trainingComplete</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16ActiveconnectiOS24ACTrainingViewControllerC14trainingFailedyyF"></a>
+                    <a name="//apple_ref/swift/Method/trainingFailed()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16ActiveconnectiOS24ACTrainingViewControllerC14trainingFailedyyF">trainingFailed()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when training has failed.
+Classes which derive from ACTrainingViewController can override this method to perform custom oerations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">trainingFailed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://activeconnect.activeapi.ninja" target="_blank" rel="external">Activeconnect</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
