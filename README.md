@@ -7,8 +7,8 @@ This framework allows the functionality of Activeconnect Authenticator to be int
 
 The framework provides a default UI that can be used to process Authentication Requests but can be customized to match the appearance of other applications.
 
-##Integration Guide
+## Integration Guide
 [This integration guide](https://activeconnect.readthedocs.io/en/latest/ios_framework.html) includes the information required to create an iOS app that processes Activeconnect Authentication Requests.
 
-##Support
+## Support
 For technical support or general support questions, please contact us at support@activeconnect.io
